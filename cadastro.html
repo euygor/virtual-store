@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ki Frutas & Legumes</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body style="min-width: 372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <strong>Ki Frutas & Legumes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./index.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./index.html">Sobre</a>
+                    </li>
+                </ul>
+                <div class="align-self-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./cadastro.html">Cadastrar-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./login.html">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-5 pb-5 mb-md-0">
+        <div class="container">
+            <h1>Informe seus dados</h1>
+            <hr />
+            <form class="pb-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset class="row">
+                            <legend>Dados Pessoais</legend>
+                            <div class="form-floating mb-3">
+                                <input type="text" autofocus class="form-control" name="name" id="name" placeholder=" ">
+                                <label class="px-4" for="name">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-6 col-xl-6">
+                                <input type="text" class="form-control" name="cpf" id="cpf" placeholder=" ">
+                                <label class="px-4" for="cpf">CPF</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-6 col-xl-6">
+                                <input type="text" class="form-control" name="nascimento" id="nascimento" placeholder=" ">
+                                <label class="px-4" for="nascimento">Data de Nascimento</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contatos</legend>
+                            <div class="form-floating mb-3 col-md-8">
+                                <input type="text" class="form-control" name="email" id="email" placeholder=" ">
+                                <label for="email">E-mail</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-6">
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder=" ">
+                                <label for="telefone">Telefone</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset class="row">
+                            <legend>Endereço</legend>
+                            <div class="form-floating mb-3 col-md-6 col-lg-4">
+                                <input type="text" class="form-control" name="cep" id="cep" placeholder=" ">
+                                <label class="px-4" for="cep">CEP</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-6 col-lg-8 align-self-end">
+                                <input type="text" class="form-control" name="bairro" id="bairro" placeholder=" ">
+                                <label class="px-4" for="bairro">Bairro</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-4">
+                                <input type="number" class="form-control" name="numero" id="numero" placeholder=" ">
+                                <label class="px-4" for="numero">Número</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-8">
+                                <input type="text" class="form-control" name="complemento" id="complemento" placeholder=" ">
+                                <label class="px-4" for="complemento">Complemento</label>
+                            </div>
+                            <div class="form-floating mb-3 col-md-12">
+                                <input type="text" class="form-control" name="referencia" id="referencia" placeholder=" ">
+                                <label class="px-4" for="referencia">Referência</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Senha de Acesso</legend>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder=" ">
+                                <label for="senha">Senha</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" name="confirmar-senha" id="confirmar-senha" placeholder=" ">
+                                <label for="confirmar-senha">Confirmar Senha</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <button class="btn btn-light btn-outline-primary" type="reset">Limpar</button>
+                    <button class="btn btn-primary" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="border-top fixed-bottom text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2022 Ki Frutas & Legumes
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a class="text-decoration-none text-dark" href="./index.html">Política de Privacidade</a>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-rigth">
+                    <a class="text-decoration-none text-dark" href="./index.html">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
